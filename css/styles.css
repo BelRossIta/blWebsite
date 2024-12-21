@@ -1,1 +1,110 @@
+/* 
+Color Theme
+    #4DF5FF(rgb - 77,245,255) - Baby Blue
+    #BF8C69(RGB - 191,140,105) - Fallow
+    #FF944D(RGB - 255,148,77) - Sunshade
+    #6CA7AA(RGB - 108,167,170) - Neptune
+    #807066(RGB - 128,112,102) - Donkey Brown
+    #475455(RGB - 71,84,85) - Mako
 
+    paragraph text:
+
+<uniquifier>: Use a unique and descriptive class name 
+<weight>: Use a value from 100 to 700 
+    josefin-sans-p {
+    font-family: "Josefin Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+    
+header text:
+    <uniquifier>: Use a unique and descriptive class name
+    <weight>: Use a value from 300 to 900
+playfair {
+    font-family: "Playfair", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    }
+
+    Modular Scale: Based on 16px, Ratio is 1.618
+    */
+
+
+:root {
+    --background:#BF8C69;
+    --fonts:#475455;
+    --accents:#6CA7AA;
+    --font_accent:#89D1D6;  /*Can be used for buttons*/
+    --mor_accents:#807066; /* a flat brownish color*/
+    --baby_blue:#4DF5FF;
+    --orange: #FF944D;
+
+    --text: "Josefin Sans", serif;
+
+
+    --h1-text:  "Playfair", serif;
+    --h2-text:  "Playfair", serif;
+    --h3-text:  "Playfair", serif;
+
+}
+
+/* Basic styling */
+body{
+    background-color: var(--background);
+}
+
+/*  Use a value from 300 to 900 */
+h1{
+    font-family: var(--h1-text);
+    font-weight: 900;
+    font-size: 4.236em;
+}
+
+h2{
+    font-family: var(--h2-text);
+    font-weight:700;
+    font-size:2.616em;
+    text-align: center;
+}
+
+h3{
+    font-family: var(--h3-text);
+    font-weight:475;
+    font-size:1.618em;
+}
+p{
+    font-family:var(--p);
+    font-size:16px;
+}
+/* ************************ more editing*********** */
+
+/* container */
+#topNav, .footer_nav{
+    display:grid;
+    text-align: center;
+}
+
+/* The ul for the nav items */
+
+.nav_item, .footer_item{
+    display:inline-block;
+    
+}
+/* href links */
+a{
+    color:var(--fonts);
+    font-family:var(--text);
+    text-decoration: none;
+    margin: 0px 10px;
+}
+
+/* image styling */
+.splash{
+    width:100%;
+    height: auto;
+    object-fit: contain;
+}
