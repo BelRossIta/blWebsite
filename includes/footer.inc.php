@@ -1,3 +1,4 @@
+
 <div id="footer">
     <!-- Footer Nav -->
     <nav class="footer_nav">
@@ -9,4 +10,5 @@
     </nav>
     <!-- Copy right  -->
     <p class="copyright">&copy; 2024-2025. Website Designed and Developed By Belita Ross. </p>
+
 </div>
