@@ -1,3 +1,4 @@
+
 /* 
 Color Theme
     #4DF5FF(rgb - 77,245,255) - Baby Blue
@@ -77,7 +78,7 @@ h3{
     font-size:1.618em;
 }
 p{
-    font-family:var(--p);
+    font-family:var(--text);
     font-size:16px;
 }
 /* ************************ more editing*********** */
@@ -86,13 +87,13 @@ p{
 #topNav, .footer_nav{
     display:grid;
     text-align: center;
+    
 }
 
 /* The ul for the nav items */
 
 .nav_item, .footer_item{
     display:inline-block;
-    
 }
 /* href links */
 a{
@@ -100,11 +101,36 @@ a{
     font-family:var(--text);
     text-decoration: none;
     margin: 0px 10px;
+    font-size:1.34em;
+
 }
 
-/* image dynamic styling */
+/* image styling */
 .splash{
     width:100%;
     height: auto;
     object-fit: contain;
 }
+
+/************* Form Styling*****/
+
+
+.fieldy{  /*This is the form container*/
+    max-width: 900px;
+    margin: auto;
+    border-radius: 50px;
+
+}
+
+.form_group{ /*These are the container for each item/child of fieldy. Center this */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.form_group:nth-last-child(1){
+    margin-bottom:0;
+}
+=======
