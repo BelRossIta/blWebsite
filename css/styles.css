@@ -110,3 +110,25 @@ a{
     height: auto;
     object-fit: contain;
 }
+
+/************* Form Styling*****/
+
+
+.fieldy{  /*This is the form container*/
+    max-width: 900px;
+    margin: auto;
+    border-radius: 50px;
+
+}
+
+.form_group{ /*These are the container for each item/child of fieldy. Center this */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.form_group:nth-last-child(1){
+    margin-bottom:0;
+}
